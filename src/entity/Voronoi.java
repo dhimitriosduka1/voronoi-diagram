@@ -26,8 +26,8 @@ public class Voronoi {
                     Site closestSite = sites.get(closestSiteIndex);
                     Site candidateSite = sites.get(k);
 
-                    int distanceOne = MathUtils.sqrt(closestSite.getX(), closestSite.getY(), i, j);
-                    int distanceTwo = MathUtils.sqrt(candidateSite.getX(), candidateSite.getY(), i, j);
+                    int distanceOne = MathUtils.euclideanDistance(closestSite.getX(), closestSite.getY(), i, j);
+                    int distanceTwo = MathUtils.euclideanDistance(candidateSite.getX(), candidateSite.getY(), i, j);
 
                     if (distanceTwo < distanceOne) {
                         closestSiteIndex = k;
