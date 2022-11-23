@@ -1,4 +1,4 @@
-# Simple implementation of voronoi-diagram-generator
+# Simple implementation of a Voronoi diagram generator
 
 This is a simple implementation of a [Voronoi diagram generator](https://en.wikipedia.org/wiki/Voronoi_diagram).
 
