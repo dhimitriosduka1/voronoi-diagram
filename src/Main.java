@@ -1,4 +1,3 @@
-import utils.ImageUtils;
 import entity.Site;
 import utils.SiteUtils;
 import entity.Voronoi;
@@ -19,7 +18,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Color[][] image = ImageUtils.init(HEIGHT, WIDTH);
+        Color[][] image = new Color[HEIGHT][WIDTH];
 
         List<Site> sites = SiteUtils.initRandom(SITE_AMOUNT, RADIUS, image);
 
